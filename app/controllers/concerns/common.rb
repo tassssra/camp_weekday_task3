@@ -6,8 +6,6 @@ module Common
     num2 = params[:num2].to_i
     operator = params[:operator]
 
-    operators = %w(addition subtraction multiplication division)
-
     @result = case operator
               when "addition"
                 num1 + num2
@@ -23,5 +21,4 @@ module Common
                 end
               end
   end
-
 end
