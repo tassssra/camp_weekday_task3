@@ -12,7 +12,8 @@ module Common
       begin
         "#{num1 / num2}..#{num1 % num2}" # 例外が発生する可能性がある処理
       rescue => e # 変数eに例外オブジェクトを格納
-        e # 例外が発生した場合、変数eがcalculationメソッドの戻り値となって@resultに格納される
+        # 例外が発生した場合、例外オブジェクトがcalculationメソッドの戻り値となって@resultに代入される
+        e
       end
     end
   end
