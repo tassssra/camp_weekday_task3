@@ -1,6 +1,5 @@
 class CalcsController < ApplicationController
   include Common
-
   def show
     # http://localhost:3000/calcs/:num1/:operator/:num2
     @result =
@@ -10,5 +9,4 @@ class CalcsController < ApplicationController
         params[:num2].to_i
         )
   end
-
 end
